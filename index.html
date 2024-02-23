@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COROUSAL DEMO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="#">Travels</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Gallery</a>
+                <a href="#">Explore</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <video class="video-slide active" src="/shaswat/images/1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="/shaswat/images/2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="/shaswat/images/2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="/shaswat/images/1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="/shaswat/images/1.mp4" autoplay muted loop></video>
+
+
+
+        <!-- <div class="content active">
+            <h1>Wonderfull <br> <span>Websites</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dignissimos obcaecati harum pariatur sit
+                tempora nobis voluptatum fugiat iure modi, sed maxime aspernatur laudantium at doloribus officia dolore
+                fugit! Dolorem distinctio dicta soluta saepe. Suscipit nostrum architecto perferendis quidem voluptatum?
+            </p>
+            <a href="#">Explore....</a>
+        </div>
+
+        <div class="content">
+            <h1>Wonderfull <br> <span>Templates</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dignissimos obcaecati harum pariatur sit
+                tempora nobis voluptatum fugiat iure modi, sed maxime aspernatur laudantium at doloribus officia dolore
+                fugit! Dolorem distinctio dicta soluta saepe. Suscipit nostrum architecto perferendis quidem voluptatum?
+            </p>
+            <a href="#">Explore....</a>
+        </div> <div class="content">
+            <h1>Wonderfull <br> <span>Designs</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dignissimos obcaecati harum pariatur sit
+                tempora nobis voluptatum fugiat iure modi, sed maxime aspernatur laudantium at doloribus officia dolore
+                fugit! Dolorem distinctio dicta soluta saepe. Suscipit nostrum architecto perferendis quidem voluptatum?
+            </p>
+            <a href="#">Explore....</a>
+        </div> <div class="content">
+            <h1>Wonderfull <br> <span>pages</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dignissimos obcaecati harum pariatur sit
+                tempora nobis voluptatum fugiat iure modi, sed maxime aspernatur laudantium at doloribus officia dolore
+                fugit! Dolorem distinctio dicta soluta saepe. Suscipit nostrum architecto perferendis quidem voluptatum?
+            </p>
+            <a href="#">Explore....</a>
+        </div> <div class="content">
+            <h1>Wonderfull <br> <span>architecture</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dignissimos obcaecati harum pariatur sit
+                tempora nobis voluptatum fugiat iure modi, sed maxime aspernatur laudantium at doloribus officia dolore
+                fugit! Dolorem distinctio dicta soluta saepe. Suscipit nostrum architecto perferendis quidem voluptatum?
+            </p>
+            <a href="#">Explore....</a>
+        </div> -->
+
+
+        <div class="media-icons">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+
+    <!-- <section class="about-us">
+        <div class="main-img">
+          <img src="/images/about.jpg" alt="about-images">
+        </div>
+
+        <div class="text">
+            <h4>About</h4>
+            <h1> We Guarantee your photoshoots <br> success - Love to Help you</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iusto amet animi delectus totam odio laboriosam, cum excepturi minima. Explicabo in nostrum voluptatibus dolorem quis sint provident exercitationem illo iusto deleniti iste, suscipit voluptas, beatae alias neque necessitatibus at quo dicta consectetur officia, veritatis magnam accusantium. Eum dolorum voluptate sequi!</p>
+
+            <div class="last-text">
+                <div class="text1">
+                    <h3>500+</h3>
+                    <h5>Project done</h5>
+                </div>
+                <div class="text2">
+                    <h3>20k</h3>
+                    <h5>happy clients</h5>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <script type="text/javascript">
+        // Javascript of responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        // Javascript for video slider navigation
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+                clearInterval(autoSlideInterval);
+                autoSlide();
+            });
+        });
+        let currentSlide = 0;
+const totalSlides = slides.length; 
+
+let autoSlideInterval; 
+
+
+function autoSlide() {
+    autoSlideInterval = setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        sliderNav(currentSlide); 
+    }, 4000); 
+}
+autoSlide();
+    </script>
+
+
+</body>
+
+</html>
